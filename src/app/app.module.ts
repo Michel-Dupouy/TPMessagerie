@@ -6,6 +6,7 @@ import { TitreComponent } from './Composants/titre/titre.component';
 import { PersonnesComponent } from './Composants/personnes/personnes.component';
 import { MessageComponent } from './Composants/message/message.component';
 import { NouveauComponent } from './Composants/nouveau/nouveau.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -15,9 +16,10 @@ import { NouveauComponent } from './Composants/nouveau/nouveau.component';
     MessageComponent,
     NouveauComponent
   ],
-  imports: [
-    BrowserModule
-  ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
